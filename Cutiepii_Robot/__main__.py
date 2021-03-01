@@ -51,17 +51,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Welcome user: {}, , I am cutest bot: Cutiepii! 
-
-I am an Anime themed advance group management bot with a lot of Special Features.
-
-You can also make my sister. [Cutiepii Repo](https://github.com/Rajkumar-27/CutiepiiRobot)
-
-Use /help to know my abilities [^_^](https://telegra.ph/file/d31755c8e0245be16c4f5.png).
+Welcome user: {}, , I am cutest bot
+You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-[Cutie](https://telegra.ph/file/d0441d0d700f54b55c9a1.mp4) at your service.
 I can help you with following functions in managing group.
 
 *Main* commands available:
@@ -212,8 +206,8 @@ def start(update: Update, context: CallbackContext):
                              text="Support Chat",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="Updates Channel",
-                             url="https://t.me/Techno_Ocean")
+                             text="Owner",
+                             url="https://t.me/iam_vasu")
                   
                      ]]))
     else:
