@@ -51,7 +51,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Welcome user: {}, , I am cutest bot
+Hi!{}, I am Cutie
 You can find my list of available commands with /help.
 """
 
@@ -197,17 +197,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cutiepii to your group",
+                            text="Add Cutie to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Chat",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
-                         InlineKeyboardButton(
                              text="Owner",
-                             url="https://t.me/iam_vasu")
+                             url="https://t.me/xxvasu"),
+                         InlineKeyboardButton(
+                             text="Group",
+                             url="https://t.me/hindi_chatting_india")
                   
                      ]]))
     else:
